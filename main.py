@@ -84,19 +84,10 @@ def write_file(name, price, rating, seller):
 print("scraping started")
 
 product_links = get_link_data()
-# print(product_links)
-
 product_names = get_name_data()
-# print(product_names)
-
 product_prices = get_price_data()
-# print(product_prices)
-
 product_ratings = get_rating_data()
-# print(product_ratings)
-
 product_sellers = get_seller_data(product_links)
-# print(product_sellers)
 
 write_file(product_names, product_prices, product_ratings, product_sellers)
 print("scraping endec")
